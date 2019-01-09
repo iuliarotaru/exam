@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-grid.css" type="text/css" media="all">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="icon" href="pictures/favicon.ico" type=image/x-icon>
+      <link href='https://fonts.googleapis.com/css?family=Belleza' rel='stylesheet'>
+</head>
+
+<body class="contact" id="contact">
+    <header class="social">
+        <a href="https://github.com/iuliarotaru" target="_blank">
+            <i class="fab fa-github" style="color:white;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/iuliarotaru/" target="_blank">
+            <i class="fab fa-linkedin" style="color: white;"></i>
+        </a>
+    </header>
+
+
+    <aside class="navContainer">
+
+        <div class="slide arrow">
+            <a href="#" onclick="openSideMenu()">
+                <i class="fas fa-angle-right fa-2x" style="color:white;"></i>
+            </a>
+        </div>
+        <div id="navOpen" class="navOpen">
+            <a href="#" class="close" onclick="closeSideMenu()">
+                <i class="fas fa-times fa-lg" style="color:#806156;"></i>
+            </a>
+            <a href="home.html">Home</a>
+            <a href="work.html">1st Semester Projects</a>
+            <a href="aboutme.html">About me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </aside>
+
+    <div class="info fade-in">
+        <a href="mailto:rotiulia@gmail.com" class="email">
+            <i class="fas fa-envelope" style="color: #A56C69"></i>
+            <span style="color: #A56C69">Email Me</span>
+        </a>
+        <p id="email">rotiulia@gmail.com</p>
+
+        <a href="tel:+4550135768" class="phone">
+            <i class="fas fa-phone" style="color: #A56C69"></i>
+            <span style="color: #A56C69">Let's Talk</span>
+        </a>
+        <p id="phone">+45 50 13 57 68</p>
+    </div>
+
+        <form class="form fade-in">
+
+            <h3 style="color: #A56C69
+            ;text-align: center;">Write A Message</h3>
+
+
+            <label for="name" style="text-align: left;"><span style="color: #B29C93;"> Tell Me Your Name</span> </label><br>
+            <input type="text" id="name" placeholder="Enter Your Name" name="Name" required><br>
+
+            <label for="emailme"> <span style="color: #B29C93;">Enter Email </span> </label><br>
+            <input type="text" id="emailme" placeholder="Eg. example@email.com" name="Email" required><br>
+
+            <label for="phoneNumber"><span style="color: #B29C93;"> Enter Phone Number</span> </label><br>
+            <input type="text" id="phoneNumber" placeholder="Eg. +45 18 00 00 00" name="Phone Number" required><br>
+
+            <label for="message"> <span style="color:#B29C93;">Message</span> </label><br>
+            <textarea id="message" name="message" placeholder="Write Me A Message" style="height: 200px" required></textarea> <br>
+
+
+
+            <button type="submit" class="submitbtn">Send Message</button>
+
+
+       </form>
+       <footer class="bottom-bar anim">
+     &copy; 2019 | All rights reserved
+    </footer>
+
+  
+   <script src="js/javascript.js"></script>
+</body>
+
+
+</html>

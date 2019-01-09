@@ -1,0 +1,387 @@
+
+/* Modal */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0.6;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+}
+.modalcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: '';
+}
+#modalbutton{
+  background-color: black;
+  color: white;
+  padding: 1.4%;
+  border-radius: 10px;
+  text-decoration: none;
+}
+/*All pages */
+* {
+  box-sizing: border-box;
+}
+.home,
+.aboutMe,
+.contact,
+.work,
+.theme1,
+.theme2,
+.theme3,
+.theme4{
+font-family: '';
+}
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+.social{
+    text-align: right;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.slide a{
+    padding: 5px;
+    
+}
+.bottom-bar {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+.arrow{
+    position: absolute;
+    top: 0;
+}
+@media all and (min-width:700px) {
+    .arrow{
+        position: relative;
+    }
+}
+
+/* Styling home page */
+img{
+    max-width: 60%;
+    height:  auto;
+    border-radius: 10000px;
+    display: block;
+    margin:auto;
+}
+.navOpen{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .7s;
+    
+}
+.navOpen a{
+    display: block;
+    align-content: center;
+    padding: 20px 30px;
+    font-size: 21px;
+    text-decoration: none;
+    color:blanchedalmond;
+    
+}
+.navOpen a:hover{
+    color: #4F413E;
+    transition: .4s;
+}
+.navOpen .close{
+    position: absolute;
+    top: 0;
+    right: 1px;
+    margin-left: 50px;
+}
+
+.name{
+    text-align: left;
+    font-size: 35px;
+    margin-left: 40px;
+}
+.slide a{
+    padding: 5px;
+    
+}
+
+.download{
+    background-color: antiquewhite;
+    color: #A56C69;
+    border-radius: 4px;
+    width: 170px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.download:hover{
+    background-color: #4F413E;
+}
+@media all and (min-width:700px) {
+    .name{
+        text-align: right;
+        display: block;
+        margin: auto;
+        font-size: 52px;
+    }
+}
+
+@keyframes fadeIn {
+    from{ opacity: 0;}
+    to {opacity: 1;}
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn ease-in 1 forwards 1s;
+}
+.name{
+    animation-delay: 0.1s;
+}
+.img{
+    animation-delay: 0.4s;
+}
+.download{
+    animation-delay: 0.7s;
+}
+.info{animation-delay: 0.1s;}
+.form{animation-delay: 0.3s;}
+.about{
+    animation-delay: 0.1s;
+}
+.allSkills{
+    animation-delay: 0.3s;
+}
+.box1{
+    animation-delay: 0.1s;
+}
+.box2{
+    animation-delay: 0.3s;
+}
+.box3{
+    animation-delay: 0.5s;
+}
+.box4{
+    animation-delay: 0.7s;
+}
+/* Styling Contact page*/
+
+a{
+    text-decoration: none;
+}
+ #phone, #email {
+    font-size: 17px;
+    text-align: center;
+     color: #A56C69;
+}
+.info{
+     text-align: center;
+     padding: 20px;
+    border-right: 10px;
+    border-right-color: beige;
+}
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    width: 250px;
+}
+#home button{
+    width: 170px;
+}
+button {
+    background-color: antiquewhite;
+    color: #A56C69;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 250px;
+}
+button:hover{
+    background-color: #4F413E;
+}
+
+form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    
+}
+@media all and (min-width:700px) {
+    #phone, #email{
+        font-size:  28px;}
+    .info{
+        font-size: 25px;
+    }
+    
+        
+}
+/*Styling AboutMe page */
+
+.about p{
+    font-size: 15px;
+     margin-left: 15px;
+    
+   
+}
+.allSkills p{
+    font-size: 16px;
+     margin-left: 15px;
+    color: #806156;
+}
+
+.about h2{
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 15px;
+    
+}
+.box{
+    width: 95%;
+    background-color: white;
+    border-radius: 1000px;
+}
+.skills{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 30px;
+    color: black;
+    background-color: #A56C69;
+}
+.html{
+    max-width: 50%;
+}
+.css{
+    max-width: 40%;
+}
+.js{
+   max-width:30%;
+}
+.adobe{
+  max-width: 40%;  
+}
+@keyframes animate{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.allSkills h3{
+    margin-top: 20px;
+     margin-left: 15px;
+}
+@media all and (min-width:700px) {
+    .about p{
+        font-size: 18px;
+    }
+}
+
+/* Styling Work page */
+.flip-box{
+    background-color: transparent;
+    width: 92%;
+    height: 307px;
+    perspective: 1000px;
+    margin: 20px;
+}
+.flip-box-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner{
+    transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front{
+    background-color: #B29C93;
+    color: black;
+    border-radius: 20px;
+}
+.flip-box-back{
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+.text{
+    background-color: #A56C69;
+    color: white;
+    font-size: 12px;
+    padding: 13px 13px;
+}
+.center{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Theme 2 */
+.links{
+    color: #A56C69;
+    font-size: 25px;
+}
+.description a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.description a:hover{
+    color: antiquewhite;
+}
+.description p{
+    color: white;
+    margin-top: 10px;
+    
+}
+
+/* Themes */
+#theme1 p,
+#theme2 p,
+#theme3 p,
+#theme4 p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#theme1 section,
+#theme2 section,
+#theme3 section,
+#theme4 section{
+    background-color:#252424;
+    margin-left: 20px;
+    margin-right: 20px;
+}
